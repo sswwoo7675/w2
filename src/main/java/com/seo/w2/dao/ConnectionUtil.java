@@ -13,10 +13,10 @@ public enum ConnectionUtil {
     ConnectionUtil() {
         HikariConfig config = new HikariConfig();
 
-        config.setDriverClassName("org.mariadb.jdbc.Driver");
-        config.setJdbcUrl("jdbc:mariadb://localhost:3306/webdb");
-        config.setUsername("webuser");
-        config.setPassword("webuser");
+        config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        config.setJdbcUrl("jdbc:mysql://193.122.118.167:3306/webdb");
+        config.setUsername("");
+        config.setPassword("");
         config.addDataSourceProperty("cachePrepStmts","true");
         config.addDataSourceProperty("prepStmtCacheSize","250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit","2048");
